@@ -1,0 +1,13 @@
+
+<h1>You're on the taquerias index!</h1>
+<% @taquerias.each do |taqueria| %>
+  <p>
+    <strong>Name:</strong> <%= taqueria.taqueria_name %><br>
+    <strong>Title:</strong> <%= taqueria.title %><br>
+    <strong>Description:</strong> <%= taqueria.description %><br>
+    <strong>Location:</strong> <%= taqueria.location %><br>
+    <strong>Primary Image:</strong> <%= taqueria.primary_img %><br>
+    <strong>Seconday Image:</strong> <%= taqueria.secondary_img %><br>
+
+  </p>
+<% end %>

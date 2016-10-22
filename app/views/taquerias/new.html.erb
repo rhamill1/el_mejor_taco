@@ -1,0 +1,10 @@
+<%= form_for :taqueria, url: "/taquerias", method: "post" do |f| %>
+  <strong>Name:</strong> <%= f.text_field :taqueria_name %><br>
+  <strong>Title:</strong> <%= f.text_field :title %><br>
+  <strong>Description:</strong> <%= f.text_field :description %><br>
+  <strong>Location:</strong> <%= f.text_field :location %><br>
+  <strong>Primary Image:</strong> <%= f.text_field :primary_img %><br>
+  <strong>Seconday Image:</strong> <%= f.text_field :secondary_img %><br>
+  <strong>Region:</strong> <%= f.text_field :region_id %><br>
+  <%= f.submit "Save taqueria" %>
+<% end %>

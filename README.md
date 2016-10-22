@@ -30,7 +30,9 @@
 
 #### Phase 1 - MVP
 
-#### Phase 2 - Style
+#### Phase 2 - Validations & Ensure CRUD of All Models
 
-#### Phase 3 - Nice to haves
+#### Phase 3 - Style
+
+#### Phase 4 - Nice to haves
 - add to readme: Database creation, Database initialization, Deployment instructions

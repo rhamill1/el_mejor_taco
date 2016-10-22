@@ -1,0 +1,5 @@
+  <%= form_for :region, url: "/regions", method: "post" do |f| %>
+    <p>Region</p>
+    <%= f.text_field :region_name %><br>
+    <%= f.submit "Save region" %>
+  <% end %>
