@@ -21,6 +21,11 @@ class TaqueriasController < ApplicationController
     @taqueria = Taqueria.find_by_id(taqueria_id)
   end
 
+  def edit
+    taqueria_id = params[:id]
+    @taqueria = Taqueria.find_by_id(taqueria_id)
+  end
+
   private
 
     def taqueria_params

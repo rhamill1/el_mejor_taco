@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   get "/taquerias/new", to: "taquerias#new", as: "new_taqueria"
   post "/taquerias", to: "taquerias#create"
   get "/taquerias/:id", to: "taquerias#show", as: "taqueria"
+  get "/taquerias/:id/edit", to: "taquerias#edit", as: "edit_taqueria"
 
 end
