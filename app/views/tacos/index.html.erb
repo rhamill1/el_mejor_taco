@@ -1,0 +1,9 @@
+
+<h1>You're on the tacos index!</h1>
+<% @tacos.each do |taco| %>
+  <p>
+    <strong>Title:</strong> <%= taco.title %><br>
+    <strong>Description:</strong> <%= taco.description %><br>
+    <strong>Image:</strong> <%= taco.image %><br>
+  </p>
+<% end %>

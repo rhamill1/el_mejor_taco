@@ -11,5 +11,9 @@ Rails.application.routes.draw do
   post "/taquerias", to: "taquerias#create"
   get "/taquerias/:id", to: "taquerias#show", as: "taqueria"
   get "/taquerias/:id/edit", to: "taquerias#edit", as: "edit_taqueria"
+  patch "/taquerias/:id", to: "taquerias#update"
+  delete "/taquerias/:id", to: "taquerias#destroy"
+
+  resources :tacos
 
 end

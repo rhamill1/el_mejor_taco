@@ -26,6 +26,20 @@ class TaqueriasController < ApplicationController
     @taqueria = Taqueria.find_by_id(taqueria_id)
   end
 
+  def update
+    taqueria_id = params[:id]
+    taqueria = Taqueria.find_by_id(taqueria_id)
+    taqueria.update_attributes(taqueria_params)
+    redirect_to taqueria_path(taqueria)
+  end
+
+  def destroy
+    taqueria_id = params[:id]
+    taqueria = Taqueria.find_by_id(taqueria_id)
+    taqueria.destroy
+    redirect_to taquerias_path
+  end
+
   private
 
     def taqueria_params
