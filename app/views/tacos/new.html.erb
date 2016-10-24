@@ -1,0 +1,7 @@
+<%= form_for :taco, url: "/tacos", method: "post" do |f| %>
+  <strong>Title:</strong> <%= f.text_field :title %><br>
+  <strong>Description:</strong> <%= f.text_area :description %><br>
+  <strong>Image:</strong> <%= f.text_field :image %><br>
+  <strong>Taqueria:</strong> <%= f.text_field :taqueria_id %><br>
+  <%= f.submit "Save taco" %>
+<% end %>
