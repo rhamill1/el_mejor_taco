@@ -5,3 +5,4 @@
 <h3> <%= @taqueria.primary_img %></h3><br>
 <h3> <%= @taqueria.secondary_img %></h3><br>
 <h3> <%= @taqueria.region.region_name %></h3><br>
+<h3> <%= link_to @taqueria.region.region_name, region_path(@taqueria.region.id) %></h3><br>
