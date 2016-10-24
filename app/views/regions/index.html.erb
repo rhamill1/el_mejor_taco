@@ -1,7 +1,14 @@
 
-<h1>You're on the regions index!</h1>
+<h1>El Mejor Taco</h1>
+
+<h5>There's already an app that gives crowd sourced recommendations for tacos. This app falls short in that it doesn't exclusively employ my decerning pallet as its sole destinguisher. Furthermore this current leader advertises for less than five star taquerias. ¡NO BUENO! The following app looks to remedy this void by alerting the public to the best taco establishments I've had the pleasure of feasting at. </h5>
+
+<h3>¡Bienvenidos y Bon Appetite!</h3>
+
+<h5>Click on a Region to begin exploring!</h5>
+
 <% @regions.each do |region| %>
   <p>
-    <strong>Name:</strong> <%= region.region_name %><br>
+    <strong>Region Name:</strong><%= link_to region.region_name, region_path(region) %>
   </p>
 <% end %>
