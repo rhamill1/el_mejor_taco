@@ -19,10 +19,10 @@
   - A user can create a new region
   - A user can create a new taqueria
   - A user can create a new taco
+  - A user can delete a taco
+  - A user can edit a taco
   - A user can click on a taqueria and be redirected to a page that only shows that taqueria
   - A user can see all the world class tacos from the taqueria on that taqueria's page
-  - A user can delete a taqueria
-  - A user can edit a taqueria
   - A user can click on a taqueria's region link and be redirected to a page that shows all taquerias in that region
 
 - ERD
@@ -30,9 +30,9 @@
 
 #### Phase 1 - MVP
 
-#### Phase 2 - Validations & Ensure CRUD of All Models
+#### Phase 2 - Validations for All Models & Ensure All CRUD Actions for One Model
 
-#### Phase 3 - Style
+#### Phase 3 - UX & Style
 
 #### Phase 4 - Nice to haves
 - add to readme: Database creation, Database initialization, Deployment instructions
