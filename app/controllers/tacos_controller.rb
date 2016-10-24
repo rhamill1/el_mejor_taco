@@ -21,6 +21,25 @@ class TacosController < ApplicationController
     @taco = Taco.find_by_id(taco_id)
   end
 
+  def edit
+    taco_id = params[:id]
+    @taco = Taco.find_by_id(taco_id)
+  end
+
+  def update
+    taco_id = params[:id]
+    taco = Taco.find_by_id(taco_id)
+    taco.update_attributes(taco_params)
+    redirect_to taco_path(taco)
+  end
+
+  def destroy
+    taco_id = params[:id]
+    taco = Taco.find_by_id(taco_id)
+    taco.destroy
+    redirect_to tacos_path
+  end
+
   private
 
     def taco_params
