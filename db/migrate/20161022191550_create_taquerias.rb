@@ -1,6 +1,6 @@
-class CreateTaqueria < ActiveRecord::Migration[5.0]
+class CreateTaquerias < ActiveRecord::Migration[5.0]
   def change
-    create_table :taqueria do |t|
+    create_table :taquerias do |t|
       t.string :taqueria_name
       t.string :description
       t.string :title

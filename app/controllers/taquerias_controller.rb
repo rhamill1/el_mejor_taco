@@ -11,9 +11,13 @@ class TaqueriasController < ApplicationController
   def create
     taqueria = Taqueria.new(taqueria_params)
 
-    if taqueria.save
-      redirect_to taquerias_path
-    end
+    taqueria.save
+
+    p taqueria.errors
+
+    # if taqueria.save
+    #   redirect_to taquerias_path
+    # end
   end
 
   def show

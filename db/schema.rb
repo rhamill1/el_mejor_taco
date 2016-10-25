@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20161022192452) do
     t.index ["taqueria_id"], name: "index_tacos_on_taqueria_id", using: :btree
   end
 
-  create_table "taqueria", force: :cascade do |t|
+  create_table "taquerias", force: :cascade do |t|
     t.string   "taqueria_name"
     t.string   "description"
     t.string   "title"
@@ -41,9 +41,9 @@ ActiveRecord::Schema.define(version: 20161022192452) do
     t.integer  "region_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
-    t.index ["region_id"], name: "index_taqueria_on_region_id", using: :btree
+    t.index ["region_id"], name: "index_taquerias_on_region_id", using: :btree
   end
 
-  add_foreign_key "tacos", "taqueria", column: "taqueria_id"
-  add_foreign_key "taqueria", "regions"
+  add_foreign_key "tacos", "taquerias"
+  add_foreign_key "taquerias", "regions"
 end
